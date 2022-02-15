@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <title>Practice</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./dist/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="src/js/jquery.maskedinput.js" type="text/javascript"></script>
+        <script src="src/js/galery.js"></script>
+        <script src="./dist/bundle.js"></script>
+        <style>@font-face {font-family: icon;src: url(src/fonts/icomoon.ttf);}</style>
+        <svg style="display:none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <symbol id="Wezom_logo" width="114" height="41" viewBox="0 0 114 41">
+                <g clip-path="url(#clip0_2401_140)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M111.763 2.45297C110.368 1.06629 108.483 0.288208 106.519 0.288208C104.554 0.288208 102.67 1.06629 101.275 2.45297L76.3845 27.7889C74.9665 29.2536 74.1733 31.2144 74.1733 33.2555C74.1733 35.2966 74.9665 37.2575 76.3845 38.7222C77.0757 39.4397 77.904 40.0103 78.8199 40.4C79.7359 40.7898 80.7207 40.9906 81.7157 40.9906C82.7107 40.9906 83.6956 40.7898 84.6115 40.4C85.5274 40.0103 86.3557 39.4397 87.0469 38.7222L111.763 13.4213C113.183 11.9507 113.977 9.98405 113.977 7.93716C113.977 5.89027 113.183 3.92361 111.763 2.45297Z" fill="#34495E"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M51.7037 2.45295C52.3974 1.73983 53.2264 1.17309 54.142 0.786137C55.0576 0.39918 56.0412 0.199829 57.0349 0.199829C58.0285 0.199829 59.0121 0.39918 59.9277 0.786137C60.8433 1.17309 61.6723 1.73983 62.366 2.45295L87.0818 27.7889C88.4998 29.2536 89.293 31.2144 89.293 33.2555C89.293 35.2966 88.4998 37.2574 87.0818 38.7222C86.3906 39.4397 85.5623 40.0103 84.6464 40.4C83.7305 40.7897 82.7456 40.9906 81.7506 40.9906C80.7556 40.9906 79.7707 40.7897 78.8548 40.4C77.9389 40.0103 77.1106 39.4397 76.4194 38.7222L51.7037 13.4213C50.2752 11.955 49.4755 9.9867 49.4755 7.93714C49.4755 5.88758 50.2752 3.91931 51.7037 2.45295Z" fill="#34495E"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M62.4011 2.45297C61.7099 1.73548 60.8816 1.16487 59.9657 0.775144C59.0497 0.38542 58.0649 0.18457 57.0699 0.18457C56.0748 0.18457 55.09 0.38542 54.1741 0.775144C53.2582 1.16487 52.4299 1.73548 51.7387 2.45297L27.023 27.7889C25.6049 29.2536 24.8118 31.2144 24.8118 33.2555C24.8118 35.2966 25.6049 37.2575 27.023 38.7222C27.7167 39.4353 28.5457 40.0021 29.4613 40.389C30.3769 40.776 31.3605 40.9753 32.3541 40.9753C33.3478 40.9753 34.3314 40.776 35.247 40.389C36.1626 40.0021 36.9916 39.4353 37.6853 38.7222L62.4011 13.3863C63.8191 11.9216 64.6123 9.96073 64.6123 7.91964C64.6123 5.87854 63.8191 3.91771 62.4011 2.45297Z" fill="#34495E"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.2024 2.27778C2.8961 1.56466 3.72517 0.997923 4.64076 0.610966C5.55636 0.224009 6.53995 0.0246582 7.53359 0.0246582C8.52723 0.0246582 9.51083 0.224009 10.4264 0.610966C11.342 0.997923 12.1711 1.56466 12.8648 2.27778L37.5805 27.6137C38.9986 29.0784 39.7917 31.0392 39.7917 33.0803C39.7917 35.1214 38.9986 37.0823 37.5805 38.547C36.8868 39.2601 36.0577 39.8269 35.1421 40.2138C34.2266 40.6008 33.243 40.8001 32.2493 40.8001C31.2557 40.8001 30.2721 40.6008 29.3565 40.2138C28.4409 39.8269 27.6118 39.2601 26.9181 38.547L2.2024 13.2111C0.78434 11.7464 -0.00878906 9.78554 -0.00878906 7.74445C-0.00878906 5.70335 0.78434 3.74252 2.2024 2.27778Z" fill="#34495E"/>
+                </g>
+            </symbol>
+        </svg>
+    </head>
+    <body>
+        <div id="header">
+            <div class="header-section-left">
+                <svg width="114" height="41"><use href="#Wezom_logo"></use></svg>
+                <div class="drop-menu-but" onclick="document.querySelector('.drop-menu-list').classList.toggle('active');" >
+                    <div class="poloski">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    каталог
+                    <span class="drop-menu-but-BT">Все категории</span>
+                    <div class="drop-menu-list" >
+                        <div class="drop-menu-item"><a href="#"><img src="./src/svg/1-power.svg" alt="power"><div>Категория 1<icon class="icon icon-arrow"></icon></div></a></div>
+                        <div class="drop-menu-item"><a href="#"><img src="./src/svg/2-cartridge.svg" alt="cartridge"><div>Категория 2<icon class="icon icon-arrow"></icon></div></a></div>
+                        <div class="drop-menu-item"><a href="#"><img src="./src/svg/3-geometry.svg" alt="geometry"><div>Категория 3<icon class="icon icon-arrow"></icon></div></a></div>
+                        <div class="drop-menu-item"><a href="#"><img src="./src/svg/4-aktuator.svg" alt="aktuator"><div>Категория 4<icon class="icon icon-arrow"></icon></div></a></div>
+                        <div class="drop-menu-item"><a href="#"><img src="./src/svg/5-servoprivod.svg" alt="servoprivod"><div>Категория 5<icon class="icon icon-arrow"></icon></div></a></div>
+                        <div class="drop-menu-item"><a href="#"><img src="./src/svg/6-prokladki.svg" alt="prokladki"><div>Категория 6<icon class="icon icon-arrow"></icon></div></a></div>
+                        <div class="drop-menu-item"><a href="#"><img src="./src/svg/7-zap4asti.svg" alt="zap4asti"><div>Категория 7<icon class="icon icon-arrow"></icon></div></a></div>
+                        <div class="drop-menu-item"><a href="#"><img src="./src/svg/8-aktuator.svg" alt="aktuator"><div>Категория 8<icon class="icon icon-arrow"></icon></div></a></div>
+                        <div class="drop-menu-item"><a href="#"><img src="./src/svg/9-tourbine.svg" alt="tourbine"><div>Категория 9<icon class="icon icon-arrow"></icon></div></a></div>
+                        <div class="drop-menu-item"><a href="#"><img src="./src/svg/10-zap4asti.svg" alt="zap4asti"><div>Категория 10<icon class="icon icon-arrow"></icon></div></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-section-center">
+                <div class="-double-menu-grid">
+                    <div class="doted-menu">
+                        <a class="about-us" href="">О Компании</a>
+                        <p class="dot"></p>
+                        <a href="">Доставка и оплата</a>
+                        <p class="dot"></p>
+                        <a href="">Гарантия</a>
+                    </div>
+                    <div class="tel">
+                        <a href="">+38 068 000 00 00</a>
+                    </div>
+                </div>
+                <div id="search">
+                    <form>
+                        <input type="text" placeholder='Поиск, например "тест"'>
+                        <button type="submit"><icon class="icon icon-search"></icon></button>
+                    </form>
+                </div>
+            </div>
+            <div class="header-section-right">
+                <div class="-double-menu-grid">
+                    <div class="doted-menu">
+                        <a href="">Ua</a>
+                        <p class="dot"></p>
+                        <a href="">Ru</a>
+                    </div>
+                    <div class="user">
+                        <a href="">Войти</a>
+                        <icon class="icon icon-user"></icon>
+                    </div>
+                </div>         
+                <div class="gl-but">
+                    <div class="gl-but-item icon icon-balance" data-id="1"></div>
+                    <div class="gl-but-item icon icon-heart" data-id="2"></div>
+                    <div class="gl-but-item icon icon-cart-shop" data-id="3" count="3"onclick="document.querySelector('.shopping-cart-menu').classList.toggle('active');document.querySelector('.gl-but-item[data-id=&quot;3&quot;]').classList.toggle('active');"></div>
+                </div>
+                <div class="shopping-cart-menu">
+                    <div>
+                        В корзине <span class="bold">3 товара</span>
+                    </div>
+                    <div>
+                        На сумму <span class="bold">30 000 ₴</span>
+                    </div>
+                    <div class="buy">Оформить заказ<icon class="icon icon-cart-shop"></icon></div>
+                    <a href="" class="edit">Редактировать заказ</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="gradient"></div>
+            <div class="bg"></div>
+            <div id="content">
+                <div id="Product">
+                    <div id="galery">
+                        <div>
+                            <div class="arrows"></div>
+                            <div id="mini-pics">
+                                <div data-id="1" class="mini-pic active" onclick="galery_act(1)"><img src="./src/img/small 1.jpg" alt="pic1"></div>
+                                <div data-id="2" class="mini-pic" onclick="galery_act(2)"><img src="./src/img/small 2.jpg" alt="pic2"></div>
+                                <div data-id="3" class="mini-pic" onclick="galery_act(3)"><img src="./src/img/small 3.jpg" alt="pic3"></div>
+                                <div data-id="4" class="mini-pic" onclick="galery_act(4)"><img src="./src/img/small 4.jpg" alt="pic4"></div>
+                                <div data-id="5" class="mini-pic" onclick="galery_act(5)"><img src="./src/img/small 5.jpg" alt="pic5"></div>
+                            </div>
+                        </div>
+                        <div class="big-pic"><img src="./src/img/small 1.jpg" alt="pic1"></div>
+                    </div>
+                    <div class="info">
+                        <div class="path">Test - Каталог - Группа - Тестовый товар для верстки</div>
+                        <div class="nalichie">
+                            <icon class="icon icon-check">В наличии</icon>
+                            <icon number="1" class="icon icon-star active"></icon>
+                            <icon number="2" class="icon icon-star active"></icon>
+                            <icon number="3" class="icon icon-star active"></icon>
+                            <icon number="4" class="icon icon-star active"></icon>
+                            <icon number="5" class="icon icon-star active"></icon>
+                            <span class="comment-count bold underline">12</span>
+                            <span class="articul">Артикул: <span id="articul" class="bold">100500</span></span>
+                        </div>
+                        <div class="control">
+                            <div class="sale">
+                                <div>Акция</div>
+                                <div>До 30 июля скидка — 20% на все тестовые товары</div>
+                            </div>
+                            <div class="price"><span id="price">3 799 </span><span class="lite">₴</span><span class="prew">4 200 ₴</span></div>
+                            <div class="buy-buts">
+                                <div class="buy-but">
+                                    В корзину
+                                    <icon class="icon icon-cart-shop"></icon>
+                                </div>
+                                <div class="balance"><icon class="icon icon-balance"></icon></div>
+                                <div class="heart"><icon class="icon icon-heart"></icon></div>
+                                <div class="buy-one-click">
+                                    <icon class="icon icon-call"></icon>
+                                    <div>
+                                        Купить в 1 клик
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="fishi guarantee" onclick="document.querySelector('.fishi.guarantee').classList.toggle('active');">
+                                <icon class="icon icon-shield"></icon>Гарантия<span class="icon icon-arrow"></span>
+                                <div class="fishi-hide">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                            <div class="fishi delivery" onclick="document.querySelector('.fishi.delivery').classList.toggle('active');">
+                                <icon class="icon icon-check-box"></icon>Условия доставки<span class="icon icon-arrow"></span>
+                                <div class="fishi-hide">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                            <div class="fishi pay" onclick="document.querySelector('.fishi.pay').classList.toggle('active');">
+                                <icon class="icon icon-credit-card"></icon>Условия оплаты<span class="icon icon-arrow"></span>
+                                <div class="fishi-hide">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-info">
+                    <div class="char">
+                        <div class="header">Характеристики <span class="lot">Тестового товара для верстки</span></div>
+                        <table>
+                            <tr>
+                                <td>Тип<span class="line"></span></td>
+                                <td>Группа 1</td>
+                            </tr>
+                                <td>Номер<span class="line"></span></td>
+                                <td>B410-210</td>
+                            </tr>
+                                <td>Бренд<span class="line"></span></td>
+                                <td>Wezom</td>
+                            </tr>
+                        </table>
+                        <span class="icon icon-arrow"> Все характеристики</span>
+                    </div>
+                    <div id="Char-Review">
+                        <div class="header">
+                            Отзывы покупателей
+                            <span class="comment-count">12</span>
+                            <span class="icon icon-arrow" onclick="comment(0)">Все отзывы</span>
+                        </div>
+                        <div id="list">
+                        </div>
+                        <div id="Load-comment" class="" now="2" onclick="LoadComment(2)">Показать ещё</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Subscribe">
+            Нужна помощь в подборе товара? Мы перезваниваем !
+            <form>
+                <input id="phone" type="text" placeholder='+38 (0xx) xx - xx - xxx'>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <footer id="footer">
+            <span class="left">2021 © Wezom Test</span>
+            <span class="right">Тестовое \\ Wezom</span>
+        </footer>
+        <script type="text/javascript">
+            $(function(){
+               $("#phone").mask("+38(099)99-99-999");
+            });
+        </script>
+        <script src="src/js/data.js"></script>
+    </body>
+</html>
